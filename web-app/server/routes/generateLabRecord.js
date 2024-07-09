@@ -7,7 +7,7 @@ var handler = require('./sessionKeyHandler');
 const ccpPath = path.resolve(__dirname, '..', '..', '..', 'Blockchain-Network', 'first-network', 'connection-org1.json');
 
 const mongoose = require('mongoose');
-const mongoURI = `mongodb://127.0.0.1:27017/EHR`;
+const mongoURI = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const conn = mongoose.createConnection(mongoURI);
 let databaseHandler = require("./accessDocumentDatabase");
 var upload = require('./uploadFile');

@@ -3,7 +3,7 @@
 async function updateDocumentIntoDatabase(userName, documentType, documentId,document_path) {
     try {
         const mongo = require('mongodb').MongoClient;
-        const url = 'mongodb://127.0.0.1:27017';
+        const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         let client;
         let userSchema = {
             userName: userName,
@@ -31,7 +31,7 @@ async function updateDocumentIntoDatabase(userName, documentType, documentId,doc
 async function removeDocumentFromDatabase(userName, documentType, documentId) {
     try {
         const mongo = require('mongodb').MongoClient;
-        const url = 'mongodb://127.0.0.1:27017';
+        const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         let client;
         let userSchema = {
             userName: userName,
@@ -51,7 +51,7 @@ async function verifyFileExistenceAndHash(documentId, documentType, collectionNa
     try {
         const mongoose = require('mongoose');
         let Grid = require('gridfs-stream');
-        const mongoURI = `mongodb://127.0.0.1:27017/EHR`;
+        const mongoURI = `mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/EHR`;
         const conn = mongoose.createConnection(mongoURI);
         let gfs;
 
@@ -82,7 +82,7 @@ async function verifyFileExistenceAndHash(documentId, documentType, collectionNa
 async function getFileDetailsAndDocumentId(userName, publicId, documentType) {
     try {
         const mongo = require('mongodb').MongoClient;
-        const url = 'mongodb://127.0.0.1:27017';
+        const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         let client;
         let userSchema = {
             userName: userName,
@@ -111,7 +111,7 @@ async function getFileDetailsAndDocumentId(userName, publicId, documentType) {
 async function registerNewUser(id, name, type) {
     try {
         const mongo = require('mongodb').MongoClient;
-        const url = 'mongodb://127.0.0.1:27017';
+        const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         let client;
         let userSchema = {
             userId: id,
@@ -132,7 +132,7 @@ async function registerNewUser(id, name, type) {
 async function fetchUsersByType(type) {
     try {
         const mongo = require('mongodb').MongoClient;
-        const url = 'mongodb://127.0.0.1:27017';
+        const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         let client;
         let userSchema = {
             type: type,
@@ -151,7 +151,7 @@ async function fetchUsersByType(type) {
 async function fetchUserByUserName(userName) {
     try {
         const mongo = require('mongodb').MongoClient;
-        const url = 'mongodb://127.0.0.1:27017';
+        const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         let client;
         let userSchema = {
             userId: userName,
@@ -170,7 +170,7 @@ async function fetchUserByUserName(userName) {
 async function EmergencyAccess(hospitalId,userName){
     try{
     const mongo = require('mongodb').MongoClient;
-    const url = 'mongodb://127.0.0.1:27017';
+    const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     let client;
     client = await mongo.connect(url);
     let data={
@@ -191,7 +191,7 @@ async function EmergencyAccess(hospitalId,userName){
 async function EmergencyAccessQuery(userName){
     try {
         const mongo = require('mongodb').MongoClient;
-        const url = 'mongodb://127.0.0.1:27017';
+        const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         let client;
         client = await mongo.connect(url);
         let result = await client.db('EHR').collection(String(userName)).find({"emergencyaccess":true}).sort({"time":-1}).toArray();

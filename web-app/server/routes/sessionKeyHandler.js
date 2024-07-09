@@ -2,7 +2,7 @@
 
 const mongo = require('mongodb').MongoClient;
 const crypto = require('crypto');
-const url = 'mongodb://127.0.0.1:27017';
+const url = 'mongodb+srv://test:test@cluster0.azhx4gl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 let client;
 
 function encrypt(text) {
