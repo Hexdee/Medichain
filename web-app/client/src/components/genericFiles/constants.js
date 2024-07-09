@@ -1,4 +1,4 @@
-const ADDRESS = `http://localhost:4000/`;
+const ADDRESS = `https://medichain-6ei3.onrender.com`;
 const drawerWidth = 240;
 const NAV_WIDTH = 280;
 const HEADER_MOBILE = 64;
