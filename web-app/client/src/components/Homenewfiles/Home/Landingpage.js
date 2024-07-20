@@ -16,7 +16,7 @@ class Landingpage extends Component {
                 <Sectionfirst />
                 <Sectiontwo />
                 {/* <Sectionthree /> */}
-            <//Footer />
+            <Footer />
                 </div>
         );
     }
