@@ -15,8 +15,7 @@ class Footer extends Component {
                                     </a>
                                 </div>
                                 <p className="desc mb-30 text-white">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    dinonumy eirmod tempor invidunt.
+                                    Mariam and Ajibola's EHR project website
                                 </p>
                                 <ul className="socials">
                                     <li>
