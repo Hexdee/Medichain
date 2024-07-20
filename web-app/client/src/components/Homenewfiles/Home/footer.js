@@ -15,8 +15,8 @@ class Footer extends Component {
                                     </a>
                                 </div>
                                 <p className="desc mb-30 text-white">
-                                    Mariam and Ajibola's project@Unilorin
-    
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    dinonumy eirmod tempor invidunt.
                                 </p>
                                 <ul className="socials">
                                     <li>
@@ -41,8 +41,6 @@ class Footer extends Component {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
- </div>
                         </div>
 
                         <div className="col-xl-2 col-lg-2 col-md-6">
@@ -80,16 +78,6 @@ class Footer extends Component {
                                 </ul>
                             </div>
                         </div>
-
-
-              </div>
-                    </div>
-                </div>
-            </div>
-
-                        
-           
-              </div>
                     </div>
                 </div>
             </div>
@@ -98,7 +86,6 @@ class Footer extends Component {
 }
 
 export default Footer;
-
 
 
 
