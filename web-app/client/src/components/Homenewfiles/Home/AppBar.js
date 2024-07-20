@@ -37,7 +37,7 @@ class AppBar extends Component {
                         navbarScroll
                       >
                         <Nav.Link href="/patientlogin">
-                          <Typography variant="h6" className="text-light" >LogIn</Typography>
+                          <Typography variant="h6" className="text-light" >Login</Typography>
                           </Nav.Link>
                         <Nav.Link href="/registerPatient" className="text-light">
                         <Typography variant="h6" className="text-light" > Signup</Typography>
