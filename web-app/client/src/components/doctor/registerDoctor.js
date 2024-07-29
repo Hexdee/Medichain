@@ -531,7 +531,7 @@ class registerDoctor extends Component {
                     </div>
 
                   <div className="form-outline mb-4">
-                    <label className="form-label" htmlFor="userName">Patient ID</label>
+                    <label className="form-label" htmlFor="userName">Doctor ID</label>
                     <input name="aadhaar" defaultValue={this.state.aadhaar}
                       onChange={this.handleChange}
                       id="aadhaar" className="form-control form-control-lg" helperText={this.state.errors.aadhaar}/>
