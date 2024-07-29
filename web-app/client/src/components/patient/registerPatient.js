@@ -358,7 +358,7 @@ class registerPatient extends Component {
                     <div className="row">
                             <div className="col-md-6 mb-4">
                               <div className="form-outline mb-4">
-                                <label className="form-label" htmlFor="phone">Contact Number</label>
+                                <label className="form-label" htmlFor="phone">Phone Number</label>
                                 <input required type="text" id="phone" name="phone" defaultValue={this.state.phone} helperText={this.state.errors.phone}
                                   onChange={this.handleChange} className="form-control form-control-lg" />
                               </div>
@@ -417,7 +417,7 @@ class registerPatient extends Component {
                       </div>
 
                   <div className="form-outline mb-4">
-                    <label className="form-label" htmlFor="userName">Aadhaar Number</label>
+                    <label className="form-label" htmlFor="userName">Patient ID</label>
                     <input name="aadhaar" defaultValue={this.state.aadhaar}
                       onChange={this.handleChange}
                       id="aadhaar" className="form-control form-control-lg" helperText={this.state.errors.aadhaar}/>
